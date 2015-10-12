@@ -1,5 +1,6 @@
 @echo off
 setlocal enableDelayedExpansion
+REM New and Updated Version
 REM Listing directories in User PATH variable
 REM Listing directories in System PATH variable
 REM Adding a directory path to the User Environment variable %path%
