@@ -90,13 +90,13 @@ goto:eof
 		pause
 		goto:userPrompt
 	)
-	if /i "%newPath%"=="exit" goto:eof
-	if not exist "%newPath%" (
+	if /i '%newPath%'=='exit' goto:eof
+	if not exist %newPath% (
 		echo The path you are trying to add doesn't exist
 		pause
 		goto:userPrompt
 	)
-	call:addToPath "!%1!" "%newPath%"
+	call:addToPath "!%1!" %newPath%
 	pause
 goto:eof
 
